@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from "next/navigation";
-import { courses } from "../../../data/courses";
-import LessonList from "../../../components/LessonList";
+import { courses } from "@/data/courses";
+import LessonList from "@/components/LessonList";
 
 export default function CoursePage() {
   const { id } = useParams();
