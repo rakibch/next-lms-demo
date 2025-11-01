@@ -1,0 +1,17 @@
+[
+  {
+    "user": "student",
+    "lessonId": 201,
+    "completedAt": "2025-11-01T01:46:45.531Z"
+  },
+  {
+    "user": "student",
+    "lessonId": 101,
+    "completedAt": "2025-11-01T01:47:01.051Z"
+  },
+  {
+    "user": "student",
+    "lessonId": 102,
+    "completedAt": "2025-11-01T02:47:46.229Z"
+  }
+]
