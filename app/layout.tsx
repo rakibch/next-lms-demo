@@ -1,14 +1,25 @@
+"use client";
+
 import "./globals.css";
+import { SessionProvider } from "next-auth/react";
+// import Navbar from "../components/Navbar";
+// import Footer from "../components/Footer";
+import Navbar from "@/components/Navbar";
 
-export const metadata = {
-  title: "Mini LMS Prototype",
-  description: "Video learning platform built with Next.js",
-};
-
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className="bg-gray-50 text-gray-900">{children}</body>
+      <body>
+        <SessionProvider>
+          <Navbar />
+          <main className="p-6">{children}</main>
+          {/* <Footer /> */}
+        </SessionProvider>
+      </body>
     </html>
   );
 }
